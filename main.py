@@ -189,10 +189,8 @@ def cadastrar_aluno(nome, idade, turma):
     return aluno
 
 # Função 22 - Retorna o nome do aluno de um dicionário
-# 🐛 BUG: a chave está errada
 def obter_nome(aluno):
-    """Retorna o nome do aluno a partir do dicionário."""
-    return aluno["nomes"]  # BUG: a chave correta é "nome"
+    return aluno["nome"]
 
 # Função 23 - Adiciona uma nota ao cadastro do aluno
 def adicionar_nota(aluno, nota):
