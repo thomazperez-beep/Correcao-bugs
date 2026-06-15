@@ -41,11 +41,10 @@ def dividir(a, b):
     return a / b
 
 # Função 5 - Calcula a média de uma lista de notas
-# 🐛 BUG: a divisão está usando o número errado
 def calcular_media(notas):
     """Recebe uma lista de notas e retorna a média."""
     total = sum(notas)
-    media = total / 10  # BUG: deveria dividir por len(notas)
+    media = total / len(notas)
     return media
 
 
