@@ -115,12 +115,10 @@ def inverter_texto(texto):
     return texto[::-1]
 
 # Função 14 - Verifica se uma palavra é um palíndromo (ex: "arara")
-# 🐛 BUG: a comparação está errada
 def eh_palindromo(palavra):
-    """Retorna True se a palavra for um palíndromo."""
     palavra = palavra.lower()
     invertida = palavra[::-1]
-    if palavra != invertida:  # BUG: deveria ser ==
+    if palavra == invertida:
         return True
     else:
         return False
